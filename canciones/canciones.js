@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3001;
+const port = 3002;
 
 app.get("/canciones", (req, res) => {
 res.json([
@@ -305,4 +305,9 @@ res.json([
     "album": "Evermore"
   }
 ]);
+});
+
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });

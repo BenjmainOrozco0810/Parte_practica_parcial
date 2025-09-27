@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3001;
+const port = 3001;
 app.get("/usuarios", (req, res) => {
 res.json([
   {
@@ -254,4 +254,8 @@ res.json([
     "email": "manuel.castro@soundbeat.com"
   }
 ]);
+});
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });
