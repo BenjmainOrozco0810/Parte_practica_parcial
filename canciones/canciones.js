@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const PORT = 3001;
-// Endpoint simple de usuarios
+// Endpoint simple de canciones
 app.get("/canciones", (req, res) => {
 res.json([
   {
