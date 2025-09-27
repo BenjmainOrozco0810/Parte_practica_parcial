@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const PORT = 3001;
-// Endpoint simple de usuarios
 app.get("/usuarios", (req, res) => {
 res.json([
   {
